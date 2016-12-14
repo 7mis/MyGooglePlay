@@ -11,20 +11,20 @@ import android.os.Handler;
  */
 public class BaseApplication extends Application {
 
-    private long mMainThreadId;
-    private Handler mHandler;
-    private Context mContext;
+    private static long mMainThreadId;
+    private static Handler mHandler;
+    private static Context mContext;
 
 
-    public long getMainThreadId() {
+    public static long getMainThreadId() {
         return mMainThreadId;
     }
 
-    public Handler getHandler() {
+    public static Handler getHandler() {
         return mHandler;
     }
 
-    public Context getContext() {
+    public static Context getContext() {
         return mContext;
     }
 
